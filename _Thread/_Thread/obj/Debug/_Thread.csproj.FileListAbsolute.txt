@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\_Thread\_Thread\bin\Debug\_Thread.exe.config
+D:\Workspace\C#_wrokspace\_Thread\_Thread\bin\Debug\_Thread.exe
+D:\Workspace\C#_wrokspace\_Thread\_Thread\bin\Debug\_Thread.pdb
+D:\Workspace\C#_wrokspace\_Thread\_Thread\obj\Debug\_Thread.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\_Thread\_Thread\obj\Debug\_Thread.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\_Thread\_Thread\obj\Debug\_Thread.exe
+D:\Workspace\C#_wrokspace\_Thread\_Thread\obj\Debug\_Thread.pdb

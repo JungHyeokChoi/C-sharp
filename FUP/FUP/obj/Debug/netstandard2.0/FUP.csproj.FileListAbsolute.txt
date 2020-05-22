@@ -1,0 +1,9 @@
+D:\Workspace\C#_wrokspace\FUP\FUP\bin\Debug\netstandard2.0\FUP.deps.json
+D:\Workspace\C#_wrokspace\FUP\FUP\bin\Debug\netstandard2.0\FUP.dll
+D:\Workspace\C#_wrokspace\FUP\FUP\bin\Debug\netstandard2.0\FUP.pdb
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.AssemblyInfoInputs.cache
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.AssemblyInfo.cs
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.dll
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.pdb
+D:\Workspace\C#_wrokspace\FUP\FUP\obj\Debug\netstandard2.0\FUP.csprojAssemblyReference.cache

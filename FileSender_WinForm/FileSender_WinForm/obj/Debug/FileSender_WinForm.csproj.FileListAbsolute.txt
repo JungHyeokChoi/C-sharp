@@ -1,0 +1,13 @@
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.FileSender.resources
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.Properties.Resources.resources
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.csproj.GenerateResource.cache
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\bin\Debug\FileSender_WinForm.exe.config
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\bin\Debug\FileSender_WinForm.exe
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\bin\Debug\FileSender_WinForm.pdb
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\bin\Debug\FUP.dll
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\bin\Debug\FUP.pdb
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.csproj.CopyComplete
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.exe
+D:\Workspace\C#_wrokspace\FileSender_WinForm\FileSender_WinForm\obj\Debug\FileSender_WinForm.pdb

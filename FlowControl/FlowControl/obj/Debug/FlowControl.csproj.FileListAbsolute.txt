@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\obj\Debug\FlowControl.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\obj\Debug\FlowControl.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\bin\Debug\FlowControl.exe.config
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\bin\Debug\FlowControl.exe
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\bin\Debug\FlowControl.pdb
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\obj\Debug\FlowControl.exe
+D:\Workspace\C#_wrokspace\FlowControl\FlowControl\obj\Debug\FlowControl.pdb

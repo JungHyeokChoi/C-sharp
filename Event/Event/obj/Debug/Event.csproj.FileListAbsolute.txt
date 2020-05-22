@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\Event\Event\bin\Debug\Event.exe.config
+D:\Workspace\C#_wrokspace\Event\Event\bin\Debug\Event.exe
+D:\Workspace\C#_wrokspace\Event\Event\bin\Debug\Event.pdb
+D:\Workspace\C#_wrokspace\Event\Event\obj\Debug\Event.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Event\Event\obj\Debug\Event.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Event\Event\obj\Debug\Event.exe
+D:\Workspace\C#_wrokspace\Event\Event\obj\Debug\Event.pdb

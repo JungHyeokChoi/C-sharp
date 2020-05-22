@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\bin\Debug\LinearStructure.exe.config
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\bin\Debug\LinearStructure.exe
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\bin\Debug\LinearStructure.pdb
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\obj\Debug\LinearStructure.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\obj\Debug\LinearStructure.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\obj\Debug\LinearStructure.exe
+D:\Workspace\C#_wrokspace\LinearStructure\LinearStructure\obj\Debug\LinearStructure.pdb

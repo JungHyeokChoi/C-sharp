@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\bin\Debug\Generailzation.exe.config
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\bin\Debug\Generailzation.exe
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\bin\Debug\Generailzation.pdb
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\obj\Debug\Generailzation.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\obj\Debug\Generailzation.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\obj\Debug\Generailzation.exe
+D:\Workspace\C#_wrokspace\Generailzation\Generailzation\obj\Debug\Generailzation.pdb

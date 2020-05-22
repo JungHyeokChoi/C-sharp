@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\Method\Method\bin\Debug\Method.exe.config
+D:\Workspace\C#_wrokspace\Method\Method\bin\Debug\Method.exe
+D:\Workspace\C#_wrokspace\Method\Method\bin\Debug\Method.pdb
+D:\Workspace\C#_wrokspace\Method\Method\obj\Debug\Method.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Method\Method\obj\Debug\Method.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Method\Method\obj\Debug\Method.exe
+D:\Workspace\C#_wrokspace\Method\Method\obj\Debug\Method.pdb

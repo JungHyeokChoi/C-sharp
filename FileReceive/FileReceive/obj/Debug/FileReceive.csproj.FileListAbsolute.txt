@@ -1,0 +1,10 @@
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\bin\Debug\FileReceive.exe.config
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\bin\Debug\FileReceive.exe
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\bin\Debug\FileReceive.pdb
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\bin\Debug\FUP.dll
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\bin\Debug\FUP.pdb
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\obj\Debug\FileReceive.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\obj\Debug\FileReceive.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\obj\Debug\FileReceive.csproj.CopyComplete
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\obj\Debug\FileReceive.exe
+D:\Workspace\C#_wrokspace\FileReceive\FileReceive\obj\Debug\FileReceive.pdb

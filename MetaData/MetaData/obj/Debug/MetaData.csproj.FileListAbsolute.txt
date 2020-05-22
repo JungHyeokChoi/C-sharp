@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\MetaData\MetaData\bin\Debug\MetaData.exe.config
+D:\Workspace\C#_wrokspace\MetaData\MetaData\bin\Debug\MetaData.exe
+D:\Workspace\C#_wrokspace\MetaData\MetaData\bin\Debug\MetaData.pdb
+D:\Workspace\C#_wrokspace\MetaData\MetaData\obj\Debug\MetaData.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\MetaData\MetaData\obj\Debug\MetaData.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\MetaData\MetaData\obj\Debug\MetaData.exe
+D:\Workspace\C#_wrokspace\MetaData\MetaData\obj\Debug\MetaData.pdb

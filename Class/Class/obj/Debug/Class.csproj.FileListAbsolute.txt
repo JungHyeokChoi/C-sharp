@@ -1,0 +1,10 @@
+D:\Workspace\C#_wrokspace\Class\Class\bin\Debug\Class.exe.config
+D:\Workspace\C#_wrokspace\Class\Class\bin\Debug\Class.exe
+D:\Workspace\C#_wrokspace\Class\Class\bin\Debug\Class.pdb
+D:\Workspace\C#_wrokspace\Class\Class\obj\Debug\Class.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Class\Class\obj\Debug\Class.exe
+D:\Workspace\C#_wrokspace\Class\Class\obj\Debug\Class.pdb
+D:\Workspace\C#_wrokspace\Class\Class\bin\Debug\System.ValueTuple.dll
+D:\Workspace\C#_wrokspace\Class\Class\bin\Debug\System.ValueTuple.xml
+D:\Workspace\C#_wrokspace\Class\Class\obj\Debug\Class.csproj.CopyComplete

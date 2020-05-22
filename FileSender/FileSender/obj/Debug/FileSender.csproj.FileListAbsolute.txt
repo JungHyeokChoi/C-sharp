@@ -1,0 +1,10 @@
+D:\Workspace\C#_wrokspace\FileSender\FileSender\bin\Debug\FileSender.exe.config
+D:\Workspace\C#_wrokspace\FileSender\FileSender\bin\Debug\FileSender.exe
+D:\Workspace\C#_wrokspace\FileSender\FileSender\bin\Debug\FileSender.pdb
+D:\Workspace\C#_wrokspace\FileSender\FileSender\bin\Debug\FUP.dll
+D:\Workspace\C#_wrokspace\FileSender\FileSender\bin\Debug\FUP.pdb
+D:\Workspace\C#_wrokspace\FileSender\FileSender\obj\Debug\FileSender.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FileSender\FileSender\obj\Debug\FileSender.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FileSender\FileSender\obj\Debug\FileSender.csproj.CopyComplete
+D:\Workspace\C#_wrokspace\FileSender\FileSender\obj\Debug\FileSender.exe
+D:\Workspace\C#_wrokspace\FileSender\FileSender\obj\Debug\FileSender.pdb

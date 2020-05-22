@@ -1,0 +1,8 @@
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\bin\Debug\COMInterop.exe.config
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\bin\Debug\COMInterop.exe
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\bin\Debug\COMInterop.pdb
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\obj\Debug\COMInterop.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\obj\Debug\COMInterop.csproj.ResolveComReference.cache
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\obj\Debug\COMInterop.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\obj\Debug\COMInterop.exe
+D:\Workspace\C#_wrokspace\COMInterop\COMInterop\obj\Debug\COMInterop.pdb

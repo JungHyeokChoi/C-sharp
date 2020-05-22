@@ -1,0 +1,16 @@
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\WithPython.exe.config
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\WithPython.exe
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\WithPython.pdb
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\IronPython.dll
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\IronPython.Modules.dll
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\Microsoft.Dynamic.dll
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\Microsoft.Scripting.dll
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\IronPython.xml
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\IronPython.Modules.xml
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\Microsoft.Dynamic.xml
+D:\Workspace\C#_wrokspace\WithPython\WithPython\bin\Debug\Microsoft.Scripting.xml
+D:\Workspace\C#_wrokspace\WithPython\WithPython\obj\Debug\WithPython.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\WithPython\WithPython\obj\Debug\WithPython.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\WithPython\WithPython\obj\Debug\WithPython.csproj.CopyComplete
+D:\Workspace\C#_wrokspace\WithPython\WithPython\obj\Debug\WithPython.exe
+D:\Workspace\C#_wrokspace\WithPython\WithPython\obj\Debug\WithPython.pdb

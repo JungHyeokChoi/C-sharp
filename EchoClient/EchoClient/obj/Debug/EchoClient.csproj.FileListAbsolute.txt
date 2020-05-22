@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\bin\Debug\EchoClient.exe.config
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\bin\Debug\EchoClient.exe
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\bin\Debug\EchoClient.pdb
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\obj\Debug\EchoClient.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\obj\Debug\EchoClient.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\obj\Debug\EchoClient.exe
+D:\Workspace\C#_wrokspace\EchoClient\EchoClient\obj\Debug\EchoClient.pdb

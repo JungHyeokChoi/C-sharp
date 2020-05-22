@@ -1,0 +1,11 @@
+D:\Workspace\C#_wrokspace\Interface\Interface\bin\Debug\netcoreapp2.1\Interface.deps.json
+D:\Workspace\C#_wrokspace\Interface\Interface\bin\Debug\netcoreapp2.1\Interface.runtimeconfig.json
+D:\Workspace\C#_wrokspace\Interface\Interface\bin\Debug\netcoreapp2.1\Interface.runtimeconfig.dev.json
+D:\Workspace\C#_wrokspace\Interface\Interface\bin\Debug\netcoreapp2.1\Interface.dll
+D:\Workspace\C#_wrokspace\Interface\Interface\bin\Debug\netcoreapp2.1\Interface.pdb
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.AssemblyInfoInputs.cache
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.AssemblyInfo.cs
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.dll
+D:\Workspace\C#_wrokspace\Interface\Interface\obj\Debug\netcoreapp2.1\Interface.pdb

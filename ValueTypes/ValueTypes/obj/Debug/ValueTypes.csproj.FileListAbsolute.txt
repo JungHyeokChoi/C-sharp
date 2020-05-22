@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\obj\Debug\ValueTypes.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\obj\Debug\ValueTypes.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\bin\Debug\ValueTypes.exe.config
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\bin\Debug\ValueTypes.exe
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\bin\Debug\ValueTypes.pdb
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\obj\Debug\ValueTypes.exe
+D:\Workspace\C#_wrokspace\HelloWorld\ValueTypes\ValueTypes\obj\Debug\ValueTypes.pdb

@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.exe.config
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.exe
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.pdb
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.exe
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.pdb
+D:\Workspace\C#_wrokspace\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+D:\Workspace\C#_wrokspace\Operators\Operators\bin\Debug\Operators.exe.config
+D:\Workspace\C#_wrokspace\Operators\Operators\bin\Debug\Operators.exe
+D:\Workspace\C#_wrokspace\Operators\Operators\bin\Debug\Operators.pdb
+D:\Workspace\C#_wrokspace\Operators\Operators\obj\Debug\Operators.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Operators\Operators\obj\Debug\Operators.exe
+D:\Workspace\C#_wrokspace\Operators\Operators\obj\Debug\Operators.pdb

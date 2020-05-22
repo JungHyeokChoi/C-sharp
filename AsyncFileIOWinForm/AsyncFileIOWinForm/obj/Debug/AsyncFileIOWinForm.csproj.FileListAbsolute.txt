@@ -1,0 +1,10 @@
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\bin\Debug\AsyncFileIOWinForm.exe.config
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\bin\Debug\AsyncFileIOWinForm.exe
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\bin\Debug\AsyncFileIOWinForm.pdb
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.MainForm.resources
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.Properties.Resources.resources
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.csproj.GenerateResource.cache
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.exe
+D:\Workspace\C#_wrokspace\AsyncFileIOWinForm\AsyncFileIOWinForm\obj\Debug\AsyncFileIOWinForm.pdb

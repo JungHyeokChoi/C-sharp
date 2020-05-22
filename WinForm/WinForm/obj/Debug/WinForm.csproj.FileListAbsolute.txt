@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\WinForm\WinForm\bin\Debug\WinForm.exe.config
+D:\Workspace\C#_wrokspace\WinForm\WinForm\bin\Debug\WinForm.exe
+D:\Workspace\C#_wrokspace\WinForm\WinForm\bin\Debug\WinForm.pdb
+D:\Workspace\C#_wrokspace\WinForm\WinForm\obj\Debug\WinForm.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\WinForm\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\WinForm\WinForm\obj\Debug\WinForm.exe
+D:\Workspace\C#_wrokspace\WinForm\WinForm\obj\Debug\WinForm.pdb

@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\Property\Property\bin\Debug\Property.exe.config
+D:\Workspace\C#_wrokspace\Property\Property\bin\Debug\Property.exe
+D:\Workspace\C#_wrokspace\Property\Property\bin\Debug\Property.pdb
+D:\Workspace\C#_wrokspace\Property\Property\obj\Debug\Property.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\Property\Property\obj\Debug\Property.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\Property\Property\obj\Debug\Property.exe
+D:\Workspace\C#_wrokspace\Property\Property\obj\Debug\Property.pdb

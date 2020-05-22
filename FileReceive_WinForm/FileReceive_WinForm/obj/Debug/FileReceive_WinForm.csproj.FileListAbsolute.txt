@@ -1,0 +1,13 @@
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\bin\Debug\FileReceive_WinForm.exe.config
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\bin\Debug\FileReceive_WinForm.exe
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\bin\Debug\FileReceive_WinForm.pdb
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.Properties.Resources.resources
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.csproj.GenerateResource.cache
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.exe
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.pdb
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\bin\Debug\FUP.dll
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\bin\Debug\FUP.pdb
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.csproj.CopyComplete
+D:\Workspace\C#_wrokspace\FileReceive_WinForm\FileReceive_WinForm\obj\Debug\FileReceive_WinForm.MainForm.resources

@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\bin\Debug\String.exe.config
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\bin\Debug\String.exe
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\bin\Debug\String.pdb
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\obj\Debug\String.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\obj\Debug\String.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\obj\Debug\String.exe
+D:\Workspace\C#_wrokspace\HelloWorld\String\String\obj\Debug\String.pdb

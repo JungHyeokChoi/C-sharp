@@ -1,0 +1,7 @@
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\bin\Debug\_FileStream.exe.config
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\bin\Debug\_FileStream.exe
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\bin\Debug\_FileStream.pdb
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\obj\Debug\_FileStream.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\obj\Debug\_FileStream.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\obj\Debug\_FileStream.exe
+D:\Workspace\C#_wrokspace\_FileStream\_FileStream\obj\Debug\_FileStream.pdb

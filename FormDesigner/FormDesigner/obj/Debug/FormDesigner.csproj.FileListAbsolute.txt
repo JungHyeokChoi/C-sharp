@@ -1,0 +1,10 @@
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\bin\Debug\FormDesigner.exe.config
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\bin\Debug\FormDesigner.exe
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\bin\Debug\FormDesigner.pdb
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.csprojAssemblyReference.cache
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.MainForm.resources
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.Properties.Resources.resources
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.csproj.GenerateResource.cache
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.csproj.CoreCompileInputs.cache
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.exe
+D:\Workspace\C#_wrokspace\FormDesigner\FormDesigner\obj\Debug\FormDesigner.pdb
