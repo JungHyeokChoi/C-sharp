@@ -1,0 +1,14 @@
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.csproj.CoreCompileInputs.cache
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\eBookManager.Engine.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\eBookManager.Engine.pdb
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\System.ValueTuple.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\System.ValueTuple.xml
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.csprojAssemblyReference.cache
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.csproj.CopyComplete
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.pdb
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.Design.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.dll
+D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.Fonts.dll
