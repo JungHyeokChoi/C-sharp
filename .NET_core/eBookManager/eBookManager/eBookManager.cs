@@ -192,33 +192,32 @@ namespace eBookManager
             DialogResult dialog = MessageBox.Show("Are you sure you want to delete this Vitural Storage Space?", "Vitural Storage Space Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                if (!(spaces == null))
-            {
-                foreach (ListViewItem item in itemColl)
-                {
-                    for (int i = 0; i < spaces.Count; i++)
+                if (!(spaces == null)) {
+                    foreach (ListViewItem item in itemColl)
                     {
-                        StorageSpace space = spaces[i];
-                        if(item.Text == space.Name)
+                        for (int i = 0; i < spaces.Count; i++)
                         {
-                            try
+                            StorageSpace space = spaces[i];
+                            if (item.Text == space.Name)
                             {
-                                if (space.BookList.Count > 0)
+                                try
                                 {
-                                    space.BookList.Clear();
+                                    if (space.BookList.Count > 0)
+                                    {
+                                        space.BookList.Clear();
+                                    }
+                                    spaces.Remove(space);
+                                    spaces.WriteToDataStore(_jsonPath);
+                                    lstStorageSpaces.Items.Remove(item);
                                 }
-                                spaces.Remove(space);
-                                spaces.WriteToDataStore(_jsonPath);
-                                lstStorageSpaces.Items.Remove(item);
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(ex.Message);
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.Message);
+                                }
                             }
                         }
                     }
                 }
-            }
             }
         }
     }
