@@ -58,6 +58,12 @@
     <Compile Include="eBookManager.Designer.cs">
       <DependentUpon>eBookManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClassification.Designer.cs">
+      <DependentUpon>AddClassification.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImportBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddClassification.resx">
+      <DependentUpon>AddClassification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eBookManager.resx">
       <DependentUpon>eBookManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +118,7 @@
   <ItemGroup>
     <Content Include="ico\importBooks.ico" />
     <Content Include="ico\mainForm.ico" />
+    <None Include="img\add-classification.png" />
     <Content Include="img\add_ebook_to_storage_space.png" />
     <Content Include="img\add_new_storage_space.png" />
     <None Include="img\update-ebook-file %282%29.png" />

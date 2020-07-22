@@ -139,10 +139,13 @@
   <data name="ReadEbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ReadEbook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="update-ebook-file (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\update-ebook-file (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_new_storage_space" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\add_new_storage_space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update-ebook-file (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\update-ebook-file (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add-classification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\add-classification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

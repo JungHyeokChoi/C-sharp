@@ -14,7 +14,7 @@ namespace eBookManager
     {
         private string _jsonPath;
         private List<StorageSpace> spaces;
-        private enum StorageSpaceSelection { New = -9999, NoSelection = -1 }
+        private enum StorageSpaceSelection { New = -9999, NoSelection = -1 };
 
         private HashSet<string> AllowedExtensions => new HashSet<string>(StringComparer.InvariantCultureIgnoreCase) { ".doc", ".docx", ".pdf", ".epub" };
 
@@ -124,9 +124,11 @@ namespace eBookManager
             }
 
             lblEbookCount.Text = "";
-            
-            foreach(KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+
+            dlClassification.Items.Add("<Select Classification>");
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
                 dlClassification.Items.Add(pair.Key.ToString());
+            dlClassification.SelectedIndex = 0;
         }
 
         //Show Virtual Storage Spaces
@@ -277,6 +279,23 @@ namespace eBookManager
             }
         }
 
+        private void btnAddClassification_Click(object sender, EventArgs e)
+        {
+            AddClassification addClassificationForm = new AddClassification();
+            addClassificationForm.Owner = this;
+            addClassificationForm.ShowDialog();
+
+            KeyValuePair<string, string> value = addClassificationForm.pair;
+
+            DeweyDecimal.Classification.Add(value.Key, value.Value);
+
+            dlClassification.Items.Clear();
+            dlClassification.Items.Add("<Select Classification>");
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
+            dlClassification.SelectedIndex = 0;
+        }
+
         //Add ebook to Virtual storage spaces
         private void UpdateStorageSpaceBooks(int storageSpaceId)
         {
@@ -371,5 +390,13 @@ namespace eBookManager
                 }
             }
         }
+
+        private void btnAddClassification_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Add Classification";
+            this.toolTip.SetToolTip(this.btnAddClassification, "Click here to add the classification");
+        }
+
+
     }
 }

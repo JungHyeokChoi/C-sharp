@@ -98,6 +98,10 @@ namespace eBookManager
             import.ShowDialog();
             spaces = spaces.ReadFromDataStore(_jsonPath);
             PopulateStorageSpaceList();
+
+            dlClassification.Items.Clear();
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
         }
 
         // Shows the item clicked on the Virtual Storage Spaces in Vitual Storage Space Info
@@ -227,7 +231,8 @@ namespace eBookManager
 
                     ListView.SelectedListViewItemCollection itemColl = lstBooks.SelectedItems;
 
-                    DialogResult dialog = MessageBox.Show("Are you sure you want to delete this eBook?", "Delete eBook ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dialog = MessageBox.Show($"Are you sure you want to delete {lstBooks.SelectedItems.Count} {(lstBooks.SelectedItems.Count == 1 ? "eBook file" : "eBook files")}?", 
+                        "Delete eBook ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dialog == DialogResult.Yes)
                     {
                         foreach (ListViewItem item in itemColl)
@@ -259,7 +264,8 @@ namespace eBookManager
             {
                 if (lstStorageSpaces.SelectedItems.Count > 0)
                 {
-                    DialogResult dialog = MessageBox.Show("Are you sure you want to delete this Vitural Storage Space?", "Delete Vitural Storage Space", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dialog = MessageBox.Show($"Are you sure you want to delete {lstStorageSpaces.SelectedItems.Count} {(lstStorageSpaces.SelectedItems.Count == 1 ? "Vitural Storage space" : "Vitural Storage spaces")}?",
+                        "Delete Vitural Storage Space", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dialog == DialogResult.Yes)
                     {
                         ListView.SelectedListViewItemCollection itemColl = lstStorageSpaces.SelectedItems;
@@ -313,7 +319,7 @@ namespace eBookManager
         private void btnUpdateEbook_MoustHover(object sender, EventArgs e)
         {
             this.toolTip.ToolTipTitle = "Update eBook";
-            this.toolTip.SetToolTip(this.btnReadEbook, "Click here to update the eBook file");
+            this.toolTip.SetToolTip(this.btnUpdateEbook, "Click here to update the eBook file");
         }
 
         //Select Classification
