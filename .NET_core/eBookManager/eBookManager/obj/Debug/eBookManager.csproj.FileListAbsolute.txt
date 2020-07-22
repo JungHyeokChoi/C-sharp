@@ -18,6 +18,3 @@ D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\obj\Debug\eBookManager.
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\obj\Debug\eBookManager.exe
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\obj\Debug\eBookManager.pdb
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\obj\Debug\eBookManager.eBookManager.resources
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\bin\Debug\MetroFramework.Design.dll
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\bin\Debug\MetroFramework.dll
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager\bin\Debug\MetroFramework.Fonts.dll

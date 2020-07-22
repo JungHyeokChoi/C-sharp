@@ -95,7 +95,7 @@
             this.tvFoundBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tvFoundBooks.Name = "tvFoundBooks";
             this.tvFoundBooks.Size = new System.Drawing.Size(683, 283);
-            this.tvFoundBooks.TabIndex = 8;
+            this.tvFoundBooks.TabIndex = 1;
             this.tvFoundBooks.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvFoundBooks_AfterSelect);
             // 
             // groupBox1
@@ -113,7 +113,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Size = new System.Drawing.Size(683, 233);
-            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Virtual storage spaces";
             // 
@@ -123,9 +123,9 @@
             this.txtStorageSpaceDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtStorageSpaceDescription.Multiline = true;
             this.txtStorageSpaceDescription.Name = "txtStorageSpaceDescription";
-            this.txtStorageSpaceDescription.ReadOnly = true;
             this.txtStorageSpaceDescription.Size = new System.Drawing.Size(344, 136);
-            this.txtStorageSpaceDescription.TabIndex = 5;
+            this.txtStorageSpaceDescription.TabIndex = 8;
+            this.txtStorageSpaceDescription.Visible = false;
             // 
             // dlVirtualStorageSpaces
             // 
@@ -135,7 +135,7 @@
             this.dlVirtualStorageSpaces.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dlVirtualStorageSpaces.Name = "dlVirtualStorageSpaces";
             this.dlVirtualStorageSpaces.Size = new System.Drawing.Size(276, 23);
-            this.dlVirtualStorageSpaces.TabIndex = 0;
+            this.dlVirtualStorageSpaces.TabIndex = 3;
             this.dlVirtualStorageSpaces.SelectedIndexChanged += new System.EventHandler(this.dlVirtualStorageSpaces_SelectedIndexChanged);
             // 
             // lblStorageSpaceDescription
@@ -147,6 +147,7 @@
             this.lblStorageSpaceDescription.Size = new System.Drawing.Size(188, 15);
             this.lblStorageSpaceDescription.TabIndex = 6;
             this.lblStorageSpaceDescription.Text = "Storage Space Description:";
+            this.lblStorageSpaceDescription.Visible = false;
             // 
             // lblEbookCount
             // 
@@ -164,7 +165,7 @@
             this.btnSaveNewStorageSpace.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSaveNewStorageSpace.Name = "btnSaveNewStorageSpace";
             this.btnSaveNewStorageSpace.Size = new System.Drawing.Size(67, 27);
-            this.btnSaveNewStorageSpace.TabIndex = 2;
+            this.btnSaveNewStorageSpace.TabIndex = 6;
             this.btnSaveNewStorageSpace.Text = "save";
             this.btnSaveNewStorageSpace.UseVisualStyleBackColor = true;
             this.btnSaveNewStorageSpace.Visible = false;
@@ -176,7 +177,7 @@
             this.btnCancelNewStorageSpaceSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelNewStorageSpaceSave.Name = "btnCancelNewStorageSpaceSave";
             this.btnCancelNewStorageSpaceSave.Size = new System.Drawing.Size(67, 27);
-            this.btnCancelNewStorageSpaceSave.TabIndex = 3;
+            this.btnCancelNewStorageSpaceSave.TabIndex = 7;
             this.btnCancelNewStorageSpaceSave.Text = "cancel";
             this.btnCancelNewStorageSpaceSave.UseVisualStyleBackColor = true;
             this.btnCancelNewStorageSpaceSave.Visible = false;
@@ -188,7 +189,7 @@
             this.txtNewStorageSpaceName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNewStorageSpaceName.Name = "txtNewStorageSpaceName";
             this.txtNewStorageSpaceName.Size = new System.Drawing.Size(195, 25);
-            this.txtNewStorageSpaceName.TabIndex = 1;
+            this.txtNewStorageSpaceName.TabIndex = 5;
             this.txtNewStorageSpaceName.Visible = false;
             // 
             // btnAddNewStorageSpace
@@ -219,12 +220,12 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(708, 47);
+            this.groupBox2.Location = new System.Drawing.Point(707, 47);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Size = new System.Drawing.Size(469, 210);
-            this.groupBox2.TabIndex = 36;
+            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "File details";
             // 
@@ -237,7 +238,7 @@
             this.dtCreated.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtCreated.Name = "dtCreated";
             this.dtCreated.Size = new System.Drawing.Size(317, 25);
-            this.dtCreated.TabIndex = 99;
+            this.dtCreated.TabIndex = 13;
             // 
             // dtLastAccessed
             // 
@@ -248,7 +249,7 @@
             this.dtLastAccessed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtLastAccessed.Name = "dtLastAccessed";
             this.dtLastAccessed.Size = new System.Drawing.Size(317, 25);
-            this.dtLastAccessed.TabIndex = 99;
+            this.dtLastAccessed.TabIndex = 12;
             // 
             // txtFileSize
             // 
@@ -259,7 +260,7 @@
             this.txtFileSize.Name = "txtFileSize";
             this.txtFileSize.ReadOnly = true;
             this.txtFileSize.Size = new System.Drawing.Size(317, 25);
-            this.txtFileSize.TabIndex = 99;
+            this.txtFileSize.TabIndex = 15;
             // 
             // txtFilePath
             // 
@@ -270,7 +271,7 @@
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.ReadOnly = true;
             this.txtFilePath.Size = new System.Drawing.Size(317, 25);
-            this.txtFilePath.TabIndex = 99;
+            this.txtFilePath.TabIndex = 14;
             // 
             // txtExtension
             // 
@@ -281,7 +282,7 @@
             this.txtExtension.Name = "txtExtension";
             this.txtExtension.ReadOnly = true;
             this.txtExtension.Size = new System.Drawing.Size(317, 25);
-            this.txtExtension.TabIndex = 99;
+            this.txtExtension.TabIndex = 11;
             // 
             // txtFileName
             // 
@@ -292,7 +293,7 @@
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.ReadOnly = true;
             this.txtFileName.Size = new System.Drawing.Size(317, 25);
-            this.txtFileName.TabIndex = 99;
+            this.txtFileName.TabIndex = 10;
             // 
             // label6
             // 
@@ -379,8 +380,8 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(469, 297);
-            this.groupBox3.TabIndex = 37;
+            this.groupBox3.Size = new System.Drawing.Size(469, 315);
+            this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Book details";
             // 
@@ -391,8 +392,7 @@
             this.btnAddeBookToStorageSpace.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAddeBookToStorageSpace.Name = "btnAddeBookToStorageSpace";
             this.btnAddeBookToStorageSpace.Size = new System.Drawing.Size(31, 27);
-            this.btnAddeBookToStorageSpace.TabIndex = 32;
-            this.btnAddeBookToStorageSpace.Text = "button1";
+            this.btnAddeBookToStorageSpace.TabIndex = 25;
             this.toolTip.SetToolTip(this.btnAddeBookToStorageSpace, "Add eBook to selected Storage Space");
             this.btnAddeBookToStorageSpace.UseVisualStyleBackColor = true;
             this.btnAddeBookToStorageSpace.Click += new System.EventHandler(this.btnAddeBookToStorageSpace_Click);
@@ -404,16 +404,16 @@
             this.dlClassification.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dlClassification.Name = "dlClassification";
             this.dlClassification.Size = new System.Drawing.Size(317, 23);
-            this.dlClassification.TabIndex = 7;
+            this.dlClassification.TabIndex = 24;
+            this.dlClassification.SelectionChangeCommitted += new System.EventHandler(this.dlClassification_SelectionChangeCommitted);
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(137, 111);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtPrice.Mask = "$999,999.00";
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(317, 25);
-            this.txtPrice.TabIndex = 3;
+            this.txtPrice.TabIndex = 20;
             // 
             // dtDatePublished
             // 
@@ -423,7 +423,7 @@
             this.dtDatePublished.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtDatePublished.Name = "dtDatePublished";
             this.dtDatePublished.Size = new System.Drawing.Size(317, 25);
-            this.dtDatePublished.TabIndex = 5;
+            this.dtDatePublished.TabIndex = 22;
             // 
             // txtCategory
             // 
@@ -433,7 +433,7 @@
             this.txtCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(317, 25);
-            this.txtCategory.TabIndex = 6;
+            this.txtCategory.TabIndex = 23;
             // 
             // txtISBN
             // 
@@ -443,7 +443,7 @@
             this.txtISBN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(317, 25);
-            this.txtISBN.TabIndex = 4;
+            this.txtISBN.TabIndex = 21;
             // 
             // txtPublisher
             // 
@@ -453,7 +453,7 @@
             this.txtPublisher.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPublisher.Name = "txtPublisher";
             this.txtPublisher.Size = new System.Drawing.Size(317, 25);
-            this.txtPublisher.TabIndex = 2;
+            this.txtPublisher.TabIndex = 19;
             // 
             // txtAuthor
             // 
@@ -461,7 +461,7 @@
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(317, 25);
-            this.txtAuthor.TabIndex = 1;
+            this.txtAuthor.TabIndex = 18;
             // 
             // txtTitle
             // 
@@ -471,7 +471,7 @@
             this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(317, 25);
-            this.txtTitle.TabIndex = 0;
+            this.txtTitle.TabIndex = 17;
             // 
             // label14
             // 

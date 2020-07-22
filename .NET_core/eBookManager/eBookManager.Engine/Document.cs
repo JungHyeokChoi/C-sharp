@@ -16,7 +16,7 @@ namespace eBookManager.Engine
         public string Publisher { get; set; }
         public string Author { get; set; }
         public DateTime PublishDate { get; set; }
-        public DeweyDecimal Classification { get; set; }
+        public string Classification { get; set; }
         public string Category { get; set; }
     }
 }

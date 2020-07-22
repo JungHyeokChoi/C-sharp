@@ -124,6 +124,9 @@ namespace eBookManager
             }
 
             lblEbookCount.Text = "";
+            
+            foreach(KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
         }
 
         //Show Virtual Storage Spaces
@@ -163,7 +166,7 @@ namespace eBookManager
             {
                 txtNewStorageSpaceName.Visible = true;
                 lblStorageSpaceDescription.Visible = true;
-                txtStorageSpaceDescription.ReadOnly = true;
+                txtStorageSpaceDescription.Visible = true;
                 btnSaveNewStorageSpace.Visible = true;
                 btnCancelNewStorageSpaceSave.Visible = true;
                 dlVirtualStorageSpaces.Enabled = true;
@@ -214,8 +217,8 @@ namespace eBookManager
                         txtNewStorageSpaceName.Clear();
                         txtNewStorageSpaceName.Visible = false;
                         lblStorageSpaceDescription.Visible = false;
-                        txtStorageSpaceDescription.ReadOnly = true;
                         txtStorageSpaceDescription.Clear();
+                        txtStorageSpaceDescription.Visible = false;
                         btnSaveNewStorageSpace.Visible = false;
                         btnCancelNewStorageSpaceSave.Visible = false;
                         dlVirtualStorageSpaces.Enabled = true;
@@ -236,8 +239,8 @@ namespace eBookManager
             txtNewStorageSpaceName.Clear();
             txtNewStorageSpaceName.Visible = false;
             lblStorageSpaceDescription.Visible = false;
-            txtStorageSpaceDescription.ReadOnly = true;
             txtStorageSpaceDescription.Clear();
+            txtStorageSpaceDescription.Visible = false;
             btnSaveNewStorageSpace.Visible = false;
             btnCancelNewStorageSpaceSave.Visible = false;
             dlVirtualStorageSpaces.Enabled = true;
@@ -249,7 +252,7 @@ namespace eBookManager
         {
             txtNewStorageSpaceName.Visible = true;
             lblStorageSpaceDescription.Visible = true;
-            txtStorageSpaceDescription.ReadOnly = false;
+            txtStorageSpaceDescription.Visible = true;
             btnSaveNewStorageSpace.Visible = true;
             btnCancelNewStorageSpaceSave.Visible = true;
             dlVirtualStorageSpaces.Enabled = false;
@@ -316,6 +319,7 @@ namespace eBookManager
                             existingBook.ISBN = txtISBN.Text;
                             existingBook.PublishDate = dtDatePublished.Value;
                             existingBook.Category = txtCategory.Text;
+                            existingBook.Classification = dlClassification.Text;
                         }
                     }
                     else
@@ -334,6 +338,7 @@ namespace eBookManager
                         newBook.ISBN = txtISBN.Text;
                         newBook.PublishDate = dtDatePublished.Value;
                         newBook.Category = txtCategory.Text;
+                        newBook.Classification = dlClassification.Text;
 
                         if (ebooks == null)
                             ebooks = new List<Document>();
@@ -349,6 +354,21 @@ namespace eBookManager
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        
+        //Select Classification
+        private void dlClassification_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            foreach(KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+            {
+                if (dlClassification.SelectedItem.ToString() == pair.Key)
+                {
+                    this.BeginInvoke(new MethodInvoker(delegate()
+                    { 
+                        dlClassification.Text = pair.Value; 
+                    }));
+                }
             }
         }
     }

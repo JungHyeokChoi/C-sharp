@@ -111,6 +111,8 @@
     <Content Include="ico\mainForm.ico" />
     <Content Include="img\add_ebook_to_storage_space.png" />
     <Content Include="img\add_new_storage_space.png" />
+    <None Include="img\update-ebook-file %282%29.png" />
+    <None Include="img\update-ebook-file.png" />
     <None Include="img\delete-ebook-file.png" />
     <None Include="img\delete-storage-space.png" />
     <Content Include="img\docx16.png" />

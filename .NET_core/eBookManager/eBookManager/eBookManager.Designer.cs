@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(eBookManager));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuImportEbooks = new System.Windows.Forms.ToolStripMenuItem();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstStorageSpaces = new System.Windows.Forms.ListView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -72,10 +72,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txtStorageSpaceDescription = new System.Windows.Forms.TextBox();
+            this.btnUpdateEbook = new System.Windows.Forms.Button();
             this.btnDeleteStorageSpace = new System.Windows.Forms.Button();
             this.btnDeleteEbook = new System.Windows.Forms.Button();
             this.btnReadEbook = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -84,16 +85,16 @@
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1484, 30);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(1484, 30);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -110,16 +111,15 @@
             this.mnuImportEbooks.Text = "Import eBooks";
             this.mnuImportEbooks.Click += new System.EventHandler(this.mnuImportEbooks_Click);
             // 
-            // imageList1
+            // imageList
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(32, 32);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList.ImageSize = new System.Drawing.Size(32, 32);
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // toolTip1
+            // toolTip
             // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Read eBook";
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // groupBox1
             // 
@@ -131,7 +131,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Size = new System.Drawing.Size(344, 697);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Virtual Storage Spaces";
             // 
@@ -147,7 +147,7 @@
             this.lstStorageSpaces.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lstStorageSpaces.Name = "lstStorageSpaces";
             this.lstStorageSpaces.Size = new System.Drawing.Size(327, 667);
-            this.lstStorageSpaces.TabIndex = 0;
+            this.lstStorageSpaces.TabIndex = 1;
             this.lstStorageSpaces.TileSize = new System.Drawing.Size(260, 36);
             this.lstStorageSpaces.UseCompatibleStateImageBehavior = false;
             this.lstStorageSpaces.View = System.Windows.Forms.View.Tile;
@@ -163,7 +163,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Size = new System.Drawing.Size(613, 697);
-            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "eBooks in Virtual Storage Space";
             // 
@@ -175,13 +175,13 @@
             this.lstBooks.HideSelection = false;
             this.lstBooks.HotTracking = true;
             this.lstBooks.HoverSelection = true;
-            this.lstBooks.Location = new System.Drawing.Point(8, 22);
+            this.lstBooks.Location = new System.Drawing.Point(8, 24);
             this.lstBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lstBooks.Name = "lstBooks";
             this.lstBooks.Size = new System.Drawing.Size(596, 667);
-            this.lstBooks.SmallImageList = this.imageList1;
-            this.lstBooks.StateImageList = this.imageList1;
-            this.lstBooks.TabIndex = 4;
+            this.lstBooks.SmallImageList = this.imageList;
+            this.lstBooks.StateImageList = this.imageList;
+            this.lstBooks.TabIndex = 3;
             this.lstBooks.UseCompatibleStateImageBehavior = false;
             this.lstBooks.View = System.Windows.Forms.View.List;
             this.lstBooks.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBooks_MouseClick);
@@ -199,7 +199,7 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Size = new System.Drawing.Size(487, 697);
-            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "eBook Info";
             // 
@@ -207,6 +207,7 @@
             // 
             this.gbBookDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbBookDetails.Controls.Add(this.btnUpdateEbook);
             this.gbBookDetails.Controls.Add(this.btnDeleteStorageSpace);
             this.gbBookDetails.Controls.Add(this.btnDeleteEbook);
             this.gbBookDetails.Controls.Add(this.btnReadEbook);
@@ -231,7 +232,7 @@
             this.gbBookDetails.Name = "gbBookDetails";
             this.gbBookDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbBookDetails.Size = new System.Drawing.Size(469, 315);
-            this.gbBookDetails.TabIndex = 42;
+            this.gbBookDetails.TabIndex = 12;
             this.gbBookDetails.TabStop = false;
             this.gbBookDetails.Text = "Book details";
             // 
@@ -242,9 +243,8 @@
             this.txtPrice.Location = new System.Drawing.Point(137, 111);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(317, 25);
-            this.txtPrice.TabIndex = 3;
+            this.txtPrice.TabIndex = 16;
             // 
             // label6
             // 
@@ -295,7 +295,7 @@
             this.dtDatePublished.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtDatePublished.Name = "dtDatePublished";
             this.dtDatePublished.Size = new System.Drawing.Size(317, 25);
-            this.dtDatePublished.TabIndex = 5;
+            this.dtDatePublished.TabIndex = 18;
             // 
             // label11
             // 
@@ -324,21 +324,21 @@
             this.txtCategory.Location = new System.Drawing.Point(137, 201);
             this.txtCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.ReadOnly = true;
             this.txtCategory.Size = new System.Drawing.Size(317, 25);
-            this.txtCategory.TabIndex = 6;
+            this.txtCategory.TabIndex = 19;
             // 
             // dlClassification
             // 
             this.dlClassification.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dlClassification.Enabled = false;
+            this.dlClassification.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.dlClassification.FormattingEnabled = true;
             this.dlClassification.Location = new System.Drawing.Point(137, 231);
             this.dlClassification.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dlClassification.Name = "dlClassification";
             this.dlClassification.Size = new System.Drawing.Size(317, 23);
-            this.dlClassification.TabIndex = 7;
+            this.dlClassification.TabIndex = 20;
+            this.dlClassification.SelectionChangeCommitted += new System.EventHandler(this.dlClassification_SelectionChangeCommitted);
             // 
             // txtISBN
             // 
@@ -347,9 +347,8 @@
             this.txtISBN.Location = new System.Drawing.Point(137, 141);
             this.txtISBN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.ReadOnly = true;
             this.txtISBN.Size = new System.Drawing.Size(317, 25);
-            this.txtISBN.TabIndex = 4;
+            this.txtISBN.TabIndex = 17;
             // 
             // txtTitle
             // 
@@ -358,9 +357,8 @@
             this.txtTitle.Location = new System.Drawing.Point(137, 21);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.ReadOnly = true;
             this.txtTitle.Size = new System.Drawing.Size(317, 25);
-            this.txtTitle.TabIndex = 0;
+            this.txtTitle.TabIndex = 13;
             // 
             // label10
             // 
@@ -379,9 +377,8 @@
             this.txtPublisher.Location = new System.Drawing.Point(137, 81);
             this.txtPublisher.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPublisher.Name = "txtPublisher";
-            this.txtPublisher.ReadOnly = true;
             this.txtPublisher.Size = new System.Drawing.Size(317, 25);
-            this.txtPublisher.TabIndex = 2;
+            this.txtPublisher.TabIndex = 15;
             // 
             // label9
             // 
@@ -400,9 +397,8 @@
             this.txtAuthor.Location = new System.Drawing.Point(137, 51);
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.ReadOnly = true;
             this.txtAuthor.Size = new System.Drawing.Size(317, 25);
-            this.txtAuthor.TabIndex = 1;
+            this.txtAuthor.TabIndex = 14;
             // 
             // gbFileDetails
             // 
@@ -425,7 +421,7 @@
             this.gbFileDetails.Name = "gbFileDetails";
             this.gbFileDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbFileDetails.Size = new System.Drawing.Size(469, 210);
-            this.gbFileDetails.TabIndex = 41;
+            this.gbFileDetails.TabIndex = 5;
             this.gbFileDetails.TabStop = false;
             this.gbFileDetails.Text = "File details";
             // 
@@ -448,7 +444,7 @@
             this.dtLastAccessed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtLastAccessed.Name = "dtLastAccessed";
             this.dtLastAccessed.Size = new System.Drawing.Size(317, 25);
-            this.dtLastAccessed.TabIndex = 99;
+            this.dtLastAccessed.TabIndex = 8;
             // 
             // label2
             // 
@@ -469,7 +465,7 @@
             this.dtCreated.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtCreated.Name = "dtCreated";
             this.dtCreated.Size = new System.Drawing.Size(317, 25);
-            this.dtCreated.TabIndex = 99;
+            this.dtCreated.TabIndex = 9;
             // 
             // label3
             // 
@@ -490,7 +486,7 @@
             this.txtExtension.Name = "txtExtension";
             this.txtExtension.ReadOnly = true;
             this.txtExtension.Size = new System.Drawing.Size(317, 25);
-            this.txtExtension.TabIndex = 99;
+            this.txtExtension.TabIndex = 7;
             // 
             // txtFileSize
             // 
@@ -501,7 +497,7 @@
             this.txtFileSize.Name = "txtFileSize";
             this.txtFileSize.ReadOnly = true;
             this.txtFileSize.Size = new System.Drawing.Size(317, 25);
-            this.txtFileSize.TabIndex = 99;
+            this.txtFileSize.TabIndex = 11;
             // 
             // txtFileName
             // 
@@ -512,18 +508,18 @@
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.ReadOnly = true;
             this.txtFileName.Size = new System.Drawing.Size(317, 25);
-            this.txtFileName.TabIndex = 99;
+            this.txtFileName.TabIndex = 6;
             // 
             // txtFilePath
             // 
             this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFilePath.Location = new System.Drawing.Point(137, 141);
+            this.txtFilePath.Location = new System.Drawing.Point(137, 145);
             this.txtFilePath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.ReadOnly = true;
             this.txtFilePath.Size = new System.Drawing.Size(317, 25);
-            this.txtFilePath.TabIndex = 99;
+            this.txtFilePath.TabIndex = 10;
             // 
             // label8
             // 
@@ -566,7 +562,7 @@
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox6.Size = new System.Drawing.Size(469, 129);
-            this.groupBox6.TabIndex = 40;
+            this.groupBox6.TabIndex = 25;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Virtual Storage Space Info";
             // 
@@ -579,31 +575,45 @@
             this.txtStorageSpaceDescription.ReadOnly = true;
             this.txtStorageSpaceDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtStorageSpaceDescription.Size = new System.Drawing.Size(447, 71);
-            this.txtStorageSpaceDescription.TabIndex = 7;
+            this.txtStorageSpaceDescription.TabIndex = 26;
+            // 
+            // btnUpdateEbook
+            // 
+            this.btnUpdateEbook.Image = global::eBookManager.Properties.Resources.update_ebook_file__2_;
+            this.btnUpdateEbook.Location = new System.Drawing.Point(193, 263);
+            this.btnUpdateEbook.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnUpdateEbook.Name = "btnUpdateEbook";
+            this.btnUpdateEbook.Size = new System.Drawing.Size(48, 46);
+            this.btnUpdateEbook.TabIndex = 22;
+            this.btnUpdateEbook.UseVisualStyleBackColor = true;
+            this.btnUpdateEbook.Click += new System.EventHandler(this.btnUpdateEbook_Click);
+            this.btnUpdateEbook.MouseHover += new System.EventHandler(this.btnUpdateEbook_MoustHover);
             // 
             // btnDeleteStorageSpace
             // 
             this.btnDeleteStorageSpace.Image = global::eBookManager.Properties.Resources.delete_storage_space;
-            this.btnDeleteStorageSpace.Location = new System.Drawing.Point(249, 262);
+            this.btnDeleteStorageSpace.Location = new System.Drawing.Point(305, 263);
             this.btnDeleteStorageSpace.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDeleteStorageSpace.Name = "btnDeleteStorageSpace";
             this.btnDeleteStorageSpace.Size = new System.Drawing.Size(48, 46);
-            this.btnDeleteStorageSpace.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.btnDeleteStorageSpace, "Click here to delete the eBook file");
+            this.btnDeleteStorageSpace.TabIndex = 24;
+            this.toolTip.SetToolTip(this.btnDeleteStorageSpace, "Click here to delete the Virtual Storage Space");
             this.btnDeleteStorageSpace.UseVisualStyleBackColor = true;
             this.btnDeleteStorageSpace.Click += new System.EventHandler(this.btnDeleteStorageSpace_Click);
+            this.btnDeleteStorageSpace.MouseHover += new System.EventHandler(this.btnDeleteStorageSpace_MouseHover);
             // 
             // btnDeleteEbook
             // 
             this.btnDeleteEbook.Image = global::eBookManager.Properties.Resources.delete_ebook_file1;
-            this.btnDeleteEbook.Location = new System.Drawing.Point(193, 263);
+            this.btnDeleteEbook.Location = new System.Drawing.Point(249, 263);
             this.btnDeleteEbook.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDeleteEbook.Name = "btnDeleteEbook";
             this.btnDeleteEbook.Size = new System.Drawing.Size(48, 46);
-            this.btnDeleteEbook.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.btnDeleteEbook, "Click here to delete the eBook file");
+            this.btnDeleteEbook.TabIndex = 23;
+            this.toolTip.SetToolTip(this.btnDeleteEbook, "Click here to delete the eBook file");
             this.btnDeleteEbook.UseVisualStyleBackColor = true;
             this.btnDeleteEbook.Click += new System.EventHandler(this.btnDeleteEbook_Click);
+            this.btnDeleteEbook.MouseHover += new System.EventHandler(this.btnDeleteEbook_MouseHover);
             // 
             // btnReadEbook
             // 
@@ -612,10 +622,10 @@
             this.btnReadEbook.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnReadEbook.Name = "btnReadEbook";
             this.btnReadEbook.Size = new System.Drawing.Size(48, 46);
-            this.btnReadEbook.TabIndex = 32;
-            this.toolTip1.SetToolTip(this.btnReadEbook, "Click here to open the eBook file location");
+            this.btnReadEbook.TabIndex = 21;
             this.btnReadEbook.UseVisualStyleBackColor = true;
             this.btnReadEbook.Click += new System.EventHandler(this.btnReadEbook_Click);
+            this.btnReadEbook.MouseHover += new System.EventHandler(this.btnReadEbook_MouseHover);
             // 
             // eBookManager
             // 
@@ -625,14 +635,14 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "eBookManager";
             this.Text = "eBook Manager";
             this.Load += new System.EventHandler(this.eBookManager_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -649,11 +659,11 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuImportEbooks;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -694,6 +704,7 @@
         private System.Windows.Forms.TextBox txtStorageSpaceDescription;
         private System.Windows.Forms.Button btnDeleteEbook;
         private System.Windows.Forms.Button btnDeleteStorageSpace;
+        private System.Windows.Forms.Button btnUpdateEbook;
     }
 }
 

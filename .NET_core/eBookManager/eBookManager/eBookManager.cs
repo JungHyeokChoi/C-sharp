@@ -25,6 +25,9 @@ namespace eBookManager
         private void eBookManager_Load(object sender, EventArgs e)
         {
             PopulateStorageSpaceList();
+
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
         }
 
         //Add the list from Vitual Storage Spaces.
@@ -85,6 +88,7 @@ namespace eBookManager
             dtLastAccessed.Value = DateTime.Now;
             dtCreated.Value = DateTime.Now;
             dtDatePublished.Value = DateTime.Now;
+            dlClassification.Text = "";
         }
 
         //Import from virtual storage space
@@ -99,124 +103,230 @@ namespace eBookManager
         // Shows the item clicked on the Virtual Storage Spaces in Vitual Storage Space Info
         private void lstStorageSpaces_MouseClick(object sender, MouseEventArgs e)
         {
-            //Select 0th item
-            ListViewItem selectedStorageSpace = lstStorageSpaces.SelectedItems[0];
-            int spaceID = selectedStorageSpace.Name.ToInt();
+            if(lstStorageSpaces.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedStorageSpace = lstStorageSpaces.SelectedItems[0];
+                int spaceID = selectedStorageSpace.Name.ToInt();
 
-            //Search and display the selected item
-            txtStorageSpaceDescription.Text = (from d in spaces
-                                               where d.ID == spaceID
-                                               select d.Description).First();
+                //Search and display the selected item
+                txtStorageSpaceDescription.Text = (from d in spaces
+                                                   where d.ID == spaceID
+                                                   select d.Description).First();
 
-            //Gets an object that contains data to associate with the item.
-            List<Document> ebookList = (List<Document>)selectedStorageSpace.Tag;
-            PopulateContainedEbooks(ebookList);
+                //Gets an object that contains data to associate with the item.
+                List<Document> ebookList = (List<Document>)selectedStorageSpace.Tag;
+                PopulateContainedEbooks(ebookList);
+            }
         }
 
         //Show selected item in lstBooks in eBook Info Group
         private void lstBooks_MouseClick(object sender, MouseEventArgs e)
         {
-            ListViewItem selectedBook = lstBooks.SelectedItems[0];
-            if (!String.IsNullOrEmpty(selectedBook.Tag.ToString()))
+
+            if (lstBooks.SelectedItems.Count > 0)
             {
-                Document ebook = (Document)selectedBook.Tag;
-                txtFileName.Text = ebook.FileName;
-                txtExtension.Text = ebook.Extension;
-                dtLastAccessed.Value = ebook.LastAccessed;
-                dtCreated.Value = ebook.Created;
-                txtFilePath.Text = ebook.FilePath;
-                txtFileSize.Text = ebook.FileSize;
-                txtTitle.Text = ebook.Title;
-                txtAuthor.Text = ebook.Author;
-                txtPublisher.Text = ebook.Publisher;
-                txtPrice.Text = ebook.Price;
-                txtISBN.Text = ebook.ISBN;
-                dtDatePublished.Value = ebook.PublishDate;
-                txtCategory.Text = ebook.Category;
+                ListViewItem selectedBook = lstBooks.SelectedItems[0];
+
+                if (!String.IsNullOrEmpty(selectedBook.Tag.ToString()))
+                {
+                    Document ebook = (Document)selectedBook.Tag;
+                    txtFileName.Text = ebook.FileName;
+                    txtExtension.Text = ebook.Extension;
+                    dtLastAccessed.Value = ebook.LastAccessed;
+                    dtCreated.Value = ebook.Created;
+                    txtFilePath.Text = ebook.FilePath;
+                    txtFileSize.Text = ebook.FileSize;
+                    txtTitle.Text = ebook.Title;
+                    txtAuthor.Text = ebook.Author;
+                    txtPublisher.Text = ebook.Publisher;
+                    txtPrice.Text = ebook.Price;
+                    txtISBN.Text = ebook.ISBN;
+                    dtDatePublished.Value = ebook.PublishDate;
+                    txtCategory.Text = ebook.Category;
+                    dlClassification.Text = ebook.Classification;
+                }
             }
         }
 
         //Open file location folder
         private void btnReadEbook_Click(object sender, EventArgs e)
         {
-            string filePath = txtFilePath.Text;
-            FileInfo fi = new FileInfo(filePath);
-            if (fi.Exists)
+            try
             {
-                Process.Start(Path.GetDirectoryName(filePath));
+                string filePath = txtFilePath.Text;
+                FileInfo fi = new FileInfo(filePath);
+                if (fi.Exists)
+                {
+                    Process.Start(Path.GetDirectoryName(filePath));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        //Update eBook file
+        private void btnUpdateEbook_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lstStorageSpaces.SelectedItems.Count > 0)
+                {
+                    DialogResult dialog = MessageBox.Show("Are you sure you want to update this eBook?", "Update eBook", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialog == DialogResult.Yes)
+                    {
+                        foreach (StorageSpace space in spaces)
+                        {
+                            Document updateBook = (from b in space.BookList
+                                                   where $"{b.Title}".Equals($"{lstBooks.SelectedItems[0].Text}")
+                                                   select b).First();
+
+                            updateBook.FileName = txtFileName.Text;
+                            updateBook.Extension = txtExtension.Text;
+                            updateBook.LastAccessed = dtLastAccessed.Value;
+                            updateBook.Created = dtCreated.Value;
+                            updateBook.FilePath = txtFilePath.Text;
+                            updateBook.FileSize = txtFileSize.Text;
+                            updateBook.Title = txtTitle.Text;
+                            updateBook.Author = txtAuthor.Text;
+                            updateBook.Publisher = txtPublisher.Text;
+                            updateBook.Price = txtPrice.Text;
+                            updateBook.ISBN = txtISBN.Text;
+                            updateBook.PublishDate = dtDatePublished.Value;
+                            updateBook.Category = txtCategory.Text;
+                            updateBook.Classification = dlClassification.Text;
+
+                            spaces.WriteToDataStore(_jsonPath);
+                            PopulateContainedEbooks(space.BookList);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         //Delete eBook file
         private void btnDeleteEbook_Click(object sender, EventArgs e)
         {
-            ListView.SelectedListViewItemCollection itemColl = lstBooks.SelectedItems;
-
-            DialogResult dialog = MessageBox.Show("Are you sure you want to delete this eBook?", "eBook Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
+            try
             {
-                if (!(spaces == null))
+                if (lstStorageSpaces.SelectedItems.Count > 0)
                 {
-                    foreach (ListViewItem item in itemColl)
+                    int selectedStorageSpaceID = lstStorageSpaces.SelectedItems[0].Name.ToInt();
+
+                    StorageSpace storageSpace = (from s in spaces
+                                                 where s.ID == selectedStorageSpaceID
+                                                 select s).First();
+
+                    List<Document> ebooks = storageSpace.BookList;
+
+                    ListView.SelectedListViewItemCollection itemColl = lstBooks.SelectedItems;
+
+                    DialogResult dialog = MessageBox.Show("Are you sure you want to delete this eBook?", "Delete eBook ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialog == DialogResult.Yes)
                     {
-                        foreach (StorageSpace space in spaces)
+                        foreach (ListViewItem item in itemColl)
                         {
-                            for (int i = 0; i < space.BookList.Count; i++)
+                            Document deleteBook = (from b in ebooks
+                                                   where $"{b.Title}".Equals($"{item.Text}")
+                                                   select b).First();
+
+                            if (deleteBook != null)
                             {
-                                Document book = space.BookList[i];
-                                if (item.Text == book.Title)
-                                {
-                                    try
-                                    {
-                                        space.BookList.Remove(book);
-                                        spaces.WriteToDataStore(_jsonPath);
-                                        lstBooks.Items.Remove(item);
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBox.Show(ex.Message);
-                                    }
-                                }
+                                storageSpace.BookList.Remove(deleteBook);
                             }
+                            lstBooks.Items.Remove(item);
                         }
+                        spaces.WriteToDataStore(_jsonPath);
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         //Delete Virtual Storage Space
         private void btnDeleteStorageSpace_Click(object sender, EventArgs e)
         {
-            ListView.SelectedListViewItemCollection itemColl = lstStorageSpaces.SelectedItems;
-
-            DialogResult dialog = MessageBox.Show("Are you sure you want to delete this Vitural Storage Space?", "Vitural Storage Space Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
+            try
             {
-                if (!(spaces == null)) {
-                    foreach (ListViewItem item in itemColl)
+                if (lstStorageSpaces.SelectedItems.Count > 0)
+                {
+                    DialogResult dialog = MessageBox.Show("Are you sure you want to delete this Vitural Storage Space?", "Delete Vitural Storage Space", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialog == DialogResult.Yes)
                     {
-                        for (int i = 0; i < spaces.Count; i++)
+                        ListView.SelectedListViewItemCollection itemColl = lstStorageSpaces.SelectedItems;
+
+                        foreach (ListViewItem item in itemColl)
                         {
-                            StorageSpace space = spaces[i];
-                            if (item.Text == space.Name)
+                            StorageSpace deleteStorage = (from s in spaces
+                                                          where $"{s.ID}".Equals($"{item.Name}")
+                                                          select s).First();
+
+                            if (deleteStorage.BookList.Count > 0)
                             {
-                                try
-                                {
-                                    if (space.BookList.Count > 0)
-                                    {
-                                        space.BookList.Clear();
-                                    }
-                                    spaces.Remove(space);
-                                    spaces.WriteToDataStore(_jsonPath);
-                                    lstStorageSpaces.Items.Remove(item);
-                                }
-                                catch (Exception ex)
-                                {
-                                    MessageBox.Show(ex.Message);
-                                }
+                                deleteStorage.BookList.Clear();
+                                lstBooks.Items.Clear();
                             }
+                            spaces.Remove(deleteStorage);
+                            spaces.WriteToDataStore(_jsonPath);
+                            lstStorageSpaces.Items.Remove(item);
                         }
                     }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        //Setting toolTip
+        private void btnReadEbook_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Read eBook";
+            this.toolTip.SetToolTip(this.btnReadEbook, "Click here to open the eBook file location");
+        }
+
+        //Setting toolTip
+        private void btnDeleteEbook_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Delete eBook";
+            this.toolTip.SetToolTip(this.btnReadEbook, "Click here to delete the eBook file");
+        }
+
+        //Setting toolTip
+        private void btnDeleteStorageSpace_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Delete Virtual Storage Space";
+            this.toolTip.SetToolTip(this.btnReadEbook, "Click here to delete the Virtual Storage Space");
+        }
+        
+        //Setting toolTip
+        private void btnUpdateEbook_MoustHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Update eBook";
+            this.toolTip.SetToolTip(this.btnReadEbook, "Click here to update the eBook file");
+        }
+
+        //Select Classification
+        private void dlClassification_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+            {
+                if (dlClassification.SelectedItem.ToString() == pair.Key)
+                {
+                    this.BeginInvoke(new MethodInvoker(delegate ()
+                    {
+                        dlClassification.Text = pair.Value;
+                    }));
                 }
             }
         }

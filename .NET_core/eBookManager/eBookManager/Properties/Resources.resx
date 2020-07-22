@@ -121,8 +121,14 @@
   <data name="no_eBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\no_eBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="delete-storage-space" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\delete-storage-space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="delete-ebook-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\delete-ebook-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update-ebook-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\update-ebook-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_ebook_to_storage_space" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\add_ebook_to_storage_space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +142,7 @@
   <data name="add_new_storage_space" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\add_new_storage_space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete-storage-space" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\delete-storage-space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update-ebook-file (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\update-ebook-file (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

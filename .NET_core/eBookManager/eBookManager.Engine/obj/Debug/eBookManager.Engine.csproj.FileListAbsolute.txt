@@ -9,6 +9,3 @@ D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookM
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.csproj.CopyComplete
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.dll
 D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\obj\Debug\eBookManager.Engine.pdb
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.Design.dll
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.dll
-D:\Workspace\C-sharp\.NET_core\eBookManager\eBookManager.Engine\bin\Debug\MetroFramework.Fonts.dll

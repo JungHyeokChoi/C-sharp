@@ -1,9 +1,14 @@
-﻿namespace eBookManager.Engine
+﻿using System.Collections.Generic;
+
+namespace eBookManager.Engine
 {
-    public class DeweyDecimal
+    public static class DeweyDecimal
     {
-        public string ComputerScience { get; set; } = "000";
-        public string DataProcessing { get; set; } = "004";
-        public string ComputerProgramming { get; set; } = "005";
+        public static Dictionary<string, string> Classification = new Dictionary<string, string>()
+        {
+            { "ComputerScience", "000" },
+            { "DataProcessing", "004" },
+            { "ComputerProgramming", "005" }
+        };
     }
 }
