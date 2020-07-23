@@ -12,7 +12,6 @@ namespace eBookManager
 {
     public partial class ImportBooks : Form
     {
-        private string _jsonPath;
         private List<StorageSpace> spaces;
         private enum StorageSpaceSelection { New = -9999, NoSelection = -1 };
 
@@ -24,8 +23,8 @@ namespace eBookManager
         public ImportBooks()
         {
             InitializeComponent();
-            _jsonPath = Path.Combine(Application.StartupPath, "bookData.txt");
-            spaces = spaces.ReadFromDataStore(_jsonPath);
+            spaces = spaces.ReadFromDataStore(storagePath);
+            DeweyDecimal.Classification = DeweyDecimal.ReadToClassfication();
         }
 
         //Select Source Folder
@@ -125,10 +124,7 @@ namespace eBookManager
 
             lblEbookCount.Text = "";
 
-            dlClassification.Items.Add("<Select Classification>");
-            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
-                dlClassification.Items.Add(pair.Key.ToString());
-            dlClassification.SelectedIndex = 0;
+            UpdatedlClassification();
         }
 
         //Show Virtual Storage Spaces
@@ -279,21 +275,52 @@ namespace eBookManager
             }
         }
 
+        //Add Classificaion
         private void btnAddClassification_Click(object sender, EventArgs e)
         {
             AddClassification addClassificationForm = new AddClassification();
             addClassificationForm.Owner = this;
             addClassificationForm.ShowDialog();
 
-            KeyValuePair<string, string> value = addClassificationForm.pair;
+            KeyValuePair<string, string> pair = addClassificationForm.pair;
 
-            DeweyDecimal.Classification.Add(value.Key, value.Value);
+            if (pair.Key != null)
+            {
+                int iClassificationExist = (from c in DeweyDecimal.Classification
+                                            where c.Key == pair.Key || c.Value == pair.Value
+                                            select c).Count();
 
-            dlClassification.Items.Clear();
-            dlClassification.Items.Add("<Select Classification>");
-            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
-                dlClassification.Items.Add(pair.Key.ToString());
-            dlClassification.SelectedIndex = 0;
+                if (iClassificationExist > 0)
+                {
+                    KeyValuePair<string, string> existPair = (from c in DeweyDecimal.Classification
+                                                              where c.Key == pair.Key || c.Value == pair.Value
+                                                              select c).First();
+
+                    MessageBox.Show($"The same classification exists.\n{(pair.Key == existPair.Key ? $"Key : { existPair.Key }" : $"Value : { existPair.Value }")}",
+                        "Duplicate Classification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    DeweyDecimal.Classification.Add(pair.Key, pair.Value);
+                    DeweyDecimal.WriteToClassfication();
+                    UpdatedlClassification();
+                }
+            }
+        }
+
+        //Delete Classificaion
+        private void btnDeleteClassification_Click(object sender, EventArgs e)
+        {
+            int iClassificationExist = (from c in DeweyDecimal.Classification
+                                        where c.Key == dlClassification.SelectedItem.ToString()
+                                        select c).Count();
+
+            if (iClassificationExist > 0)
+            {
+                DeweyDecimal.Classification.Remove(dlClassification.SelectedItem.ToString());
+                DeweyDecimal.WriteToClassfication();
+            }
+            UpdatedlClassification();
         }
 
         //Add ebook to Virtual storage spaces
@@ -366,8 +393,25 @@ namespace eBookManager
                     }
                 }
 
-                spaces.WriteToDataStore(_jsonPath);
+                spaces.WriteToDataStore(storagePath);
                 PopulateStorageSpacesList();
+
+                foreach (Control ctrl in gbBookDetails.Controls)
+                {
+                    if (ctrl is TextBox)
+                        ctrl.Text = "";
+                }
+                foreach (Control ctrl in gbFileDetails.Controls)
+                {
+                    if (ctrl is TextBox)
+                        ctrl.Text = "";
+                }
+
+                dtLastAccessed.Value = DateTime.Now;
+                dtCreated.Value = DateTime.Now;
+                dtDatePublished.Value = DateTime.Now;
+                dlClassification.SelectedIndex = 0;
+
                 MessageBox.Show("Book added");
             }
             catch (Exception ex)
@@ -376,27 +420,50 @@ namespace eBookManager
             }
         }
         
+        //Update Classification ComboBox
+        private void UpdatedlClassification()
+        {
+            dlClassification.Items.Clear();
+            dlClassification.Items.Add("<Select Classification>");
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
+            dlClassification.SelectedIndex = 0;
+        }
+
         //Select Classification
         private void dlClassification_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            foreach(KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
             {
                 if (dlClassification.SelectedItem.ToString() == pair.Key)
                 {
-                    this.BeginInvoke(new MethodInvoker(delegate()
-                    { 
-                        dlClassification.Text = pair.Value; 
+                    this.BeginInvoke(new MethodInvoker(delegate ()
+                    {
+                        dlClassification.Text = pair.Value;
                     }));
                 }
             }
         }
 
+        //Setting toolTip
+        private void btnAddeBookToStorageSpace_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Add eBook";
+            this.toolTip.SetToolTip(this.btnAddeBookToStorageSpace, "Click here to add eBook to selected Storage Space");
+        }
+
+        //Setting toolTip
         private void btnAddClassification_MouseHover(object sender, EventArgs e)
         {
             this.toolTip.ToolTipTitle = "Add Classification";
             this.toolTip.SetToolTip(this.btnAddClassification, "Click here to add the classification");
         }
 
-
+        //Setting toolTip
+        private void btnDeleteClassification_MouseHover(object sender, EventArgs e)
+        {
+            this.toolTip.ToolTipTitle = "Delete Classification";
+            this.toolTip.SetToolTip(this.btnDeleteClassification, "Click here to delete the classification");
+        }
     }
 }

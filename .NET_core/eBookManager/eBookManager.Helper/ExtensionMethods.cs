@@ -8,7 +8,10 @@ using System.IO;
 namespace eBookManager.Helper
 {
     public static class ExtensionMethods
-    {
+    { 
+        //File Path
+        public static string storagePath { get; set; }
+
         //Convert to MB
         public static double ToMegabytes(this long bytes)
         {
@@ -90,7 +93,7 @@ namespace eBookManager.Helper
             return exists;
         }
 
-        //Write to Virtual Storage Space
+        //Write to File
         public static void WriteToDataStore(this List<StorageSpace> value, string storagePath, bool appendToExistingFile = false)
         {
             JsonSerializer json = new JsonSerializer();
@@ -104,7 +107,7 @@ namespace eBookManager.Helper
             }
         }
 
-        //Read from Virtual Storage Space
+        //Read from File
         public static List<StorageSpace> ReadFromDataStore(this List<StorageSpace> value, string storagePath)
         {
             JsonSerializer json = new JsonSerializer();

@@ -11,23 +11,17 @@ namespace eBookManager
 {
     public partial class eBookManager : Form
     {
-        private string _jsonPath;
         private List<StorageSpace> spaces;
 
         public eBookManager()
         {
             InitializeComponent();
-
-            _jsonPath = Path.Combine(Application.StartupPath, "bookData.txt");
-
-            spaces = spaces.ReadFromDataStore(_jsonPath);
         }
+
         private void eBookManager_Load(object sender, EventArgs e)
         {
             PopulateStorageSpaceList();
-
-            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
-                dlClassification.Items.Add(pair.Key.ToString());
+            UpdatedlClassification();
         }
 
         //Add the list from Vitual Storage Spaces.
@@ -88,7 +82,7 @@ namespace eBookManager
             dtLastAccessed.Value = DateTime.Now;
             dtCreated.Value = DateTime.Now;
             dtDatePublished.Value = DateTime.Now;
-            dlClassification.Text = "";
+            dlClassification.SelectedIndex = 0;
         }
 
         //Import from virtual storage space
@@ -96,12 +90,63 @@ namespace eBookManager
         {
             ImportBooks import = new ImportBooks();
             import.ShowDialog();
-            spaces = spaces.ReadFromDataStore(_jsonPath);
+            spaces = spaces.ReadFromDataStore(ExtensionMethods.storagePath);
             PopulateStorageSpaceList();
 
-            dlClassification.Items.Clear();
-            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
-                dlClassification.Items.Add(pair.Key.ToString());
+            UpdatedlClassification();
+        }
+
+        //Create File
+        private void mnuNewFile_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog dlg = new SaveFileDialog())
+            {
+                dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                dlg.Title = "New FIle";
+
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    ExtensionMethods.storagePath = dlg.FileName;
+                    spaces = spaces.ReadFromDataStore(ExtensionMethods.storagePath);
+                    DeweyDecimal.Classification = DeweyDecimal.ReadToClassfication();
+
+                    gbVirtualSotrageSpaces.Visible = true;
+                    gbEbooks.Visible = true;
+                    gbBookInfo.Visible = true;
+                    gbBookDetails.Visible = true;
+                    gbVirtualStorageSpaceInfo.Visible = true;
+                    mnuImportEbooks.Enabled = true;
+
+                    PopulateStorageSpaceList();
+                }
+            }
+        }
+
+        //Open File
+        private void mnuOpenFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog dlg = new OpenFileDialog())
+            {
+                dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    ExtensionMethods.storagePath = dlg.FileName;
+                    spaces = spaces.ReadFromDataStore(ExtensionMethods.storagePath);
+                    DeweyDecimal.Classification = DeweyDecimal.ReadToClassfication();
+
+                    gbVirtualSotrageSpaces.Visible = true;
+                    gbEbooks.Visible = true;
+                    gbBookInfo.Visible = true;
+                    gbBookDetails.Visible = true;
+                    gbVirtualStorageSpaceInfo.Visible = true;
+                    mnuImportEbooks.Enabled = true;
+
+                    PopulateStorageSpaceList();
+                }
+            }
         }
 
         // Shows the item clicked on the Virtual Storage Spaces in Vitual Storage Space Info
@@ -202,9 +247,10 @@ namespace eBookManager
                             updateBook.Category = txtCategory.Text;
                             updateBook.Classification = dlClassification.Text;
 
-                            spaces.WriteToDataStore(_jsonPath);
+                            spaces.WriteToDataStore(ExtensionMethods.storagePath);
                             PopulateContainedEbooks(space.BookList);
                         }
+                        ClearSelectedBook();
                     }
                 }
             }
@@ -247,7 +293,8 @@ namespace eBookManager
                             }
                             lstBooks.Items.Remove(item);
                         }
-                        spaces.WriteToDataStore(_jsonPath);
+                        spaces.WriteToDataStore(ExtensionMethods.storagePath);
+                        ClearSelectedBook();
                     }
                 }
             }
@@ -282,9 +329,11 @@ namespace eBookManager
                                 lstBooks.Items.Clear();
                             }
                             spaces.Remove(deleteStorage);
-                            spaces.WriteToDataStore(_jsonPath);
+                            spaces.WriteToDataStore(ExtensionMethods.storagePath);
                             lstStorageSpaces.Items.Remove(item);
                         }
+                        ClearSelectedBook();
+                        txtStorageSpaceDescription.Clear();
                     }
                 }
             }
@@ -335,6 +384,16 @@ namespace eBookManager
                     }));
                 }
             }
+        }
+
+        //Update Classification ComboBox
+        private void UpdatedlClassification()
+        {
+            dlClassification.Items.Clear();
+            dlClassification.Items.Add("<Select Classification>");
+            foreach (KeyValuePair<string, string> pair in DeweyDecimal.Classification)
+                dlClassification.Items.Add(pair.Key.ToString());
+            dlClassification.SelectedIndex = 0;
         }
     }
 }

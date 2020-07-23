@@ -125,6 +125,7 @@
     <None Include="img\update-ebook-file.png" />
     <None Include="img\delete-ebook-file.png" />
     <None Include="img\delete-storage-space.png" />
+    <None Include="img\delete-classification.png" />
     <Content Include="img\docx16.png" />
     <Content Include="img\docxx16.png" />
     <Content Include="img\eBook.png" />
