@@ -14,7 +14,7 @@ namespace OpenWeatherMap_Test
         static void Main()
         {
             //Your apiKey
-            string apiKey = "";
+            string apiKey = "a039ceb11797a887cd68228b844269d7";
             string city = "Daejeon";
 
             string url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}",city, apiKey);
@@ -22,8 +22,9 @@ namespace OpenWeatherMap_Test
             WebClient webClient = new WebClient();
             string json = webClient.DownloadString(url);
 
-
             OpenWeatherMap weatherInfo = (new JavaScriptSerializer()).Deserialize<OpenWeatherMap>(json);
+
+            Console.WriteLine("<Current Weather>\n");
 
             Console.WriteLine("Location : ({0},{1})", weatherInfo.coord.lat, weatherInfo.coord.lon);
 
@@ -48,8 +49,8 @@ namespace OpenWeatherMap_Test
                 weatherInfo.sys.type, weatherInfo.sys.id, weatherInfo.sys.country, ConvertUnixtimeToGMT(weatherInfo.sys.sunrise).ToString("tt hh:mm:ss"), ConvertUnixtimeToGMT(weatherInfo.sys.sunset).ToString("tt hh:mm:ss"));
 
             Console.WriteLine("\nEtc");
-            Console.WriteLine(" - Data receiving time : {0}\n - Shift UTC to Sec : {1} sec\n - City : {2}\n - Internal parameter : {3}",
-                weatherInfo.dt, weatherInfo.timezone, weatherInfo.name, weatherInfo.cod);
+            Console.WriteLine(" - Data Receiving Time : {0}\n - Shift UTC to Sec : {1} sec\n - City : {2}\n - Internal parameter : {3}",
+                ConvertUnixtimeToGMT(weatherInfo.dt), weatherInfo.timezone, weatherInfo.name, weatherInfo.cod);
             Console.WriteLine();
         }
 
