@@ -1,0 +1,10 @@
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\bin\Debug\Ipapi_test.exe.config
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\bin\Debug\Ipapi_test.exe
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\bin\Debug\Ipapi_test.pdb
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\obj\Debug\Ipapi_test.csprojAssemblyReference.cache
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\obj\Debug\Ipapi_test.csproj.CoreCompileInputs.cache
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\obj\Debug\Ipapi_test.exe
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\obj\Debug\Ipapi_test.pdb
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\C-sharp\.NET_core\Ipapi_test\Ipapi_test\obj\Debug\Ipapi_test.csproj.CopyComplete
